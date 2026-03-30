@@ -35,3 +35,33 @@ A join query without indexing causes performance issues when filtering large dat
 - Indexing reduces query execution time
 - Understanding execution plans is crucial
 - Database performance is critical for scalable systems
+
+- ## 📈 Performance Analysis
+
+Used EXPLAIN ANALYZE to compare query execution.
+
+### Before Index
+- Sequential Scan (slow)
+
+### After Index
+- Index Scan (fast)
+
+---
+
+## 🚀 Results
+
+- Query execution improved after indexing
+- Reduced execution time significantly
+- Improved join performance on large dataset
+
+---
+
+## 🔍 Problem vs Solution
+
+### Problem
+Query was slow due to lack of indexing on large dataset.
+
+### Solution
+Added indexes on frequently used columns:
+- orders(status)
+- orders(user_id)
