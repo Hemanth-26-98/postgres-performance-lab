@@ -59,6 +59,16 @@ Used EXPLAIN ANALYZE to compare query execution.
 ## 🔍 Problem vs Solution
 
 ### Problem
+
+## 📊 Performance Impact
+
+- Before indexing: Sequential Scan (higher execution time)
+- After indexing: Index Scan (reduced execution time)
+- Improved query performance on large dataset (50k+ rows)
+
+- ## 🧪 Real-world Scenario
+
+This project simulates a production scenario where large datasets cause slow queries, and indexing is used to optimize performance.
 Query was slow due to lack of indexing on large dataset.
 
 ### Solution
